@@ -13,6 +13,12 @@ client_script {
     'config.lua'
 }
 
+escrow_ignore {
+    'client.lua',
+    'config.lua',
+    'ui/**/*'
+  }
+
 files {
     "ui/**/*"
 }
