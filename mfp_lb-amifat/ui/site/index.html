@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Am I Fat</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        body {
+            text-align: center;
+            max-width: 335px;
+            margin: auto;
+            background-color: #f8f9fa;
+        }
+
+        #weight-display {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #007bff;
+        }
+
+        #insult {
+            font-style: italic;
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Am I Fat Pro</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" role="button">Settings</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2>Daily Weight Check</h2>
+        <p>Your weight today:</p>
+        <div id="weight-display"></div>
+        <p id="insult"></p>
+        <button onclick="generateWeight()">Refresh</button>
+
+        <h3>Progress Chart</h3>
+        <img src="img/chart.png"
+            alt="Fake progress chart">
+
+        <h3>BMI Tracker</h3>
+        <img src="img/bmi.jpg" alt="BMI tracker">
+    </main>
+
+    <script>
+        const insults = [
+            "Maybe try water instead of cake?",
+            "Running isn't illegal, you know!",
+            "Your scale is tired, give it a break!",
+            "Salads exist, just saying...",
+            "At this rate, you'll be rolling instead of walking!",
+            "Your fridge deserves a vacation!",
+            "Your couch called, it needs a break from you!",
+            "You've unlocked a new level: Heavyweight Champion!",
+            "Even gravity is working overtime for you!",
+            "Your gym membership misses you dearly!"
+        ];
+
+        function generateWeight() {
+            let weight = Math.floor(Math.random() * 31) + 70;
+            document.getElementById("weight-display").innerText = weight + " kg";
+            document.getElementById("insult").innerText = insults[Math.floor(Math.random() * insults.length)];
+        }
+
+        generateWeight();
+    </script>
+
+    <footer class="container">
+        <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></small>
+    </footer>
+</body>
+
+</html>
