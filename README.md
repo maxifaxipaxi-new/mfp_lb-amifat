@@ -13,3 +13,4 @@ Just place this into your resources folders and make sure to start this after yo
 ![amifat_screen02](https://github.com/user-attachments/assets/97bb64cd-53b4-4770-835f-5d9e3666e11d)
 
 You can find our custom LB-Phone apps at https://lb.mfpscripts.com or at our discord at https://discord.mfpscripts.com. This is an app created by the LB-Community.
+More high quality scripts at https://mfp.tebex.io !
