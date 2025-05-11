@@ -1,3 +1,4 @@
+# NOT WORKING ANYMORE - NO SUPPORT
 # AmIFat Pro - LB-Phone App
 Funny little App that dispalys random weight and funny sentences. Just a funnny little release without using player data. Enjoy our free custom app for lb-phone.
 
